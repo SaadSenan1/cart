@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <h2>Store</h2>
+    <a href="index.html">Home</a>
+    <a href="index.html">Products</a>
+    <a href="checkout.html">Cart</a>
+    <a href="checkout.html">Checkout</a>
+</div>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<div class="checkout-page">
+<img src="download-hd-shopping-cart-black-logo-icon-png-701751694973932xwblxf69dg-removebg-preview.png">
+    <h1>Checkout</h1>
+ <div class="order-summary">
+
+            <h3>Order Summary</h3>
+            <ul id="checkout-cart-items"></ul>
+            <p class="total">Total: $<span id="checkout-total-price">0</span></p>
+
+        </div>
+
+    <div class="checkout-container">
+
+        <form class="checkout-form">
+
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <button type="button" onclick="confirmOrder()">Confirm Order</button> 
+               
+            </button>
+        </form>
+    </div>
+<div class="order-success" id="order-success">
+    <div class="checkmark">✔</div>
+    <p>Order confirmed</p>
+    <small>Your order has been sent successfully</small>
+</div>
+<script>
+function toggleMenu(){
+    document.getElementById("sidebar").classList.toggle("open");
+    document.getElementById("overlay").classList.toggle("show");
+    document.querySelector(".hamburger").classList.toggle("active");
+}
+</script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
