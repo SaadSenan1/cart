@@ -155,7 +155,8 @@ border:2px solid transparent;
 .cart-box img {
 
 width: 100px;
-margin-left: 150px;
+display: block;
+margin: 20px 20px 20px 20px;
 }
 .cart-box:hover{
 border-color:#4d4d4d;
@@ -239,8 +240,8 @@ width:50%;
 .cart-box img {
 
 width: 50%;
-margin-left: 100px;
-
+margin: 0 auto 20px 0;
+display: block;
 
 
 
@@ -273,7 +274,7 @@ width: 90%;
 @media (max-width: 480px){
 
     .sidebar{
-width: 70%;
+width: 50%;
     }
 
 }
@@ -286,9 +287,7 @@ width: 70%;
         padding: 8px 10px; /* خفف المسافة */
     }
 
-    .logo{
-        font-size: 18px;   /* إذا في عنوان بالسايد منيو */
-    }
+    
 
 }
 .product-card img {
@@ -700,7 +699,7 @@ width: 50%;
   bottom: 30px;          /* يظهر من الأسفل */
   left: 50%;             /* يتوسط الشاشة */
   transform: translateX(-50%) translateY(100%);
-  background: #18f400;   /* خلفية زرقاء جميلة */
+  background: #ff9900;   /* خلفية زرقاء جميلة */
   color: white;
   padding: 15px 25px;
   border-radius: 8px;
